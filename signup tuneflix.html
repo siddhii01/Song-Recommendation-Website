@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   :root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #233975
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Monteserrat', sans-serif;
+    font-weight: 500;
+    background: lightblue;
+}   
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary blue);
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+.small{
+    font-size: 80%;
+    text-align: center;
+   
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.left{
+    height: 200px;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)), url('https://wallpapercrafter.com/desktop1/507193-geometry-poly-vector-dots-abstract-digital-art.jpg');
+    background-size:cover;
+}
+
+.left .copy{
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+}
+   .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+   }
+   .centered img {
+      width: 150px;
+      border-radius: 50%;
+   }
+
+   .right .copy{
+    color: black;
+    text-align: center;
+}
+
+.right .copy p{
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+    justify-items: center;
+    
+}
+
+.right form{
+    width: 328px;
+    
+
+}
+
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+ 
+
+  
+ div {  
+            
+        padding: 10px 0;  
+         }  
+
+
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.input-container.password{
+    position: relative;
+}
+
+.input-container.password i {
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+input[type=text], input[type=password], textarea {  
+  width: 90%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+
+form {
+  
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.signupbtn
+{
+    display: block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+}
+
+.signupbtn:hover{
+    background: #2c4893;
+    cursor: pointer;
+}
+
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+</style>
+<script>
+const form = document.querySelector('form');
+form.addEventListener('submit', function(event) {
+event.preventDefault();
+validateForm();
+});
+
+function validateForm() {
+  const email = document.querySelector('#email').value.trim();
+  var Phone_number=document.getElementById("Phone_number").value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return false;
+  }
+  if (Phone_number.length !=10) {
+    alert("Please enter a valid 10-digit phone number.");
+    return false;
+  }
+}
+</script>
+</head>
+<body >
+<div class="left">
+    <section class="copy">
+        <h1>Tune in to Tuneflix</h1>
+    </section>
+</div>
+<div class="right">
+    <form action="#" name="myForm" onsubmit="return validateForm()">
+        <label> <b>Full name</b> </label>  
+        <input type="text" name="fullname" placeholder= "Full name" required />  
+        <div>  
+        <label>  
+        <b>Subscription Plan :</b>  
+        </label>  
+         
+        <select required>  
+        <option value="Select">Select</option>  
+        
+        <option value="1 Month">1 Month</option>  
+        <option value="3 Months">3 Months</option>
+        <option value="6 Months">6 Months</option>  
+        <option value="1 Year">1 Year</option>  
+        
+        </select>  
+        </div>  
+        
+        <div>  
+        <label>  
+        <b>Gender</b> :  
+        </label>
+        <input type="radio" value="Male" name="gender" checked > Male  
+        <input type="radio" value="Female" name="gender"> Female  
+        <input type="radio" value="Other" name="gender"> Other  
+         
+        </div>  
+        <label>  
+        <b>Phone :  </b>
+        </label>  
+        <input type="text" name="country code" placeholder="Country Code"  id="Phone_number" size="13"/>  
+        
+        
+        <label for="email"><b>Email</b></label>  
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>  
+         
+        <label for="psw"><b>Password</b></label>  
+        <input type="password" placeholder="Enter Password" name="psw" required>  
+     
+        <label for="psw-repeat"><b>Re-type Password</b></label>  
+        <input type="password" placeholder="Re-type Password" name="psw-repeat" required>  
+        
+        <br>
+         <p>Already have an account?<a href="login.html">Click here to Log-In</a></p>
+        
+       
+      
+       <button class="signupbtn" type="submit">Sign Up</button>
+       
+   </form>
+</div>
+</body>
+</html>

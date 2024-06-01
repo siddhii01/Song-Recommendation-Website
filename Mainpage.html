@@ -1,0 +1,596 @@
+<html>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #121212;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(https://wallpapercrafter.com/desktop1/507193-geometry-poly-vector-dots-abstract-digital-art.jpg);
+    
+  }
+
+  h1 {
+  text-align: center;
+  text-emphasis-color: #000000;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: larger; 
+  }
+
+  h2 {
+    text-align: left;
+    text-emphasis-color: #000000;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+
+  h4{
+    text-emphasis-color: #ffffff;
+    
+  }
+
+  .profileimage{
+    position: relative;
+    top: 3;
+    width: 1px;
+    height: 1px;
+  }
+
+ 
+  .main-container {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+  
+  .list-container {
+    position: absolute;
+    top: 10;
+    right: 50;
+    padding: 05px;
+  }
+
+  .topbar {
+   
+    width: 100%;
+    position: relative;
+    background-color: #1a9ad9;
+    padding: 14px 30px;
+    text-align: center;
+  }
+
+  .topbar .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  .topbar .navbar ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+    align-items: right;
+  }
+  .topbar .navbar ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .topbar .navbar ul li a:hover,
+  .topbar .navbar ul li a:active,
+  .topbar .navbar ul li a:focus {
+    color: #f3eded;
+    font-size: 15px;
+  }
+  .topbar .navbar ul li.divider {
+    color: #ffffff;
+    font-size: 26px;
+    margin: 0px 20px;
+    width: auto;
+  }
+   
+  .top-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    
+  .tuneflix-music {
+    padding: 20px 40px;
+  }
+  .tuneflix-music h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .tuneflix-music .list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+  }
+  .tuneflix-music .list .item {
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+  }
+  .tuneflix-music .list .item:hover {
+    background-color: #252525;
+  }
+  .tuneflix-music .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  .tuneflix-music .list .item .play {
+    position: relative;
+  }
+  .tuneflix-music .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #FFCCCB;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  .tuneflix-music .list .item:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  .tuneflix-music .list .item h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .tuneflix-music .list .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .tuneflix-music hr {
+    margin: 70px 0px 0px;
+    border-color: #636363;
+  }
+
+  </style>
+  <title>Home/Tuneflix</title>
+  <script>
+  
+  function playPause() {
+    var music = document.getElementById("music");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+  
+  function playPause2() {
+    var music = document.getElementById("music2");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause3() {
+    var music = document.getElementById("music3");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause4() {
+    var music = document.getElementById("music4");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause5() {
+    var music = document.getElementById("music5");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause6() {
+    var music = document.getElementById("music6");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause7() {
+    var music = document.getElementById("music7");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause8() {
+    var music = document.getElementById("music8");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause9() {
+    var music = document.getElementById("music9");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause10() {
+    var music = document.getElementById("music10");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause11() {
+    var music = document.getElementById("music11");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause12() {
+    var music = document.getElementById("music12");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+  
+  function playPause13() {
+    var music = document.getElementById("music13");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause14() {
+    var music = document.getElementById("music14");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause15() {
+    var music = document.getElementById("music15");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause16() {
+    var music = document.getElementById("music16");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause17() {
+    var music = document.getElementById("music17");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  function playPause18() {
+    var music = document.getElementById("music18");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+
+  const audioElements = document.querySelectorAll('audio');
+  audioElements.forEach((audio) => {
+    audio.addEventListener('play', () => {
+    // Pause all other audio elements
+    audioElements.forEach((otherAudio) => {
+      if (otherAudio !== audio) {
+        otherAudio.pause();
+      }
+    });
+  });
+});
+
+  </script>
+<body>
+
+    <div>
+
+      
+    </div>
+
+    <div class="main-container">
+      <div class="topbar">
+        
+
+        <div class="navbar" id="tuneflix">
+          <ul>
+            <li>
+              <a href="mood_siddhi.html" target="_self"><p>Choose Mood</p></a>
+            </li>
+            <li class="profileimage">
+              <a href="profilesiddhi.html"><img src="profile_siddhi.png" height="35px" width="35px"></a>
+            </li>
+          </ul>
+          <ul class="list-container">
+            <li>
+              <a href="login.html" target="_self">Log In</a>
+            </li>
+            <li class="divider">|</li>
+            <li>
+              <a href = "signup tuneflix.html" target="_self">Sign Up</a>
+            </li>
+            <li class="divider">|</li>
+            <li>
+              <a href="feedback_siddhi.html">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tuneflix-music" id="happy">
+        <h2>Trending Today</h2>
+
+        <div class="list">
+          <div class="item">
+            <img src="calmdown.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause()"></span>
+              <audio id="music" src="Calm-Down-Calm-Down(PaglaSongs).mp3"></audio>
+            </div>
+            <h4>Calm Down</h4>
+            <p>Song by Rema</p>
+          </div>
+
+          <div class="item">
+            <img src="excuses.jpg" />
+            <div class="play">
+              
+              <span class="fa fa-play" onclick="playPause2()"></span>
+              <audio id="music2" src="Excuses_64(PagalWorld.com.se).mp3"></audio>
+            </div>
+            <h4>Excuses</h4>
+            <p>Song By AP Dhillon and Gurinder Gill</p>
+          </div>
+
+          <div class="item">
+            <img src="bones.jpg" width="10px" height="160px" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause3()"></span>
+              <audio id="music3" src="Bones(PaglaSongs).mp3"></audio>
+            </div>
+            <h4>Bones</h4>
+            <p>Song By Imagine Dragons</p>
+          </div>
+
+          <div class="item">
+            <img src="reminder.jpg">
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause4()"></span>
+              <audio id="music4" src="The_Weeknd_-_Reminder.mp3"></audio>
+            </div>
+            <h4>Reminder</h4>
+            <p>Song By The Weekend</p>
+          </div>
+
+          <div class="item">
+            <img src="apnabana.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause5()"></span>
+              <audio id="music5" src="Apna-Bana-Le(PagalWorld).mp3"></audio>
+            </div>
+            <h4>Apna Bana Le</h4>
+            <p>Song by Arijit Singh and Sachin – Jigar</p>
+          </div>
+
+          <div class="item">
+            <img src="mazaak.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause6()"></span>
+              <audio id="music6" src="Mazaak - Anuv Jain(audiosong.in).mp3"></audio>
+            </div>
+            <h4>Mazaak</h4>
+            <p>Song By Anuv Jain</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tuneflix-music">
+        <h2>Best Hits Of All Time</h2>
+        <div class="list">
+          <div class="item">
+            <img src="shapeofyou.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause7()"></span>
+              <audio id="music7" src="Shape-of-You-(Lofi)(PagalWorldl).mp3"></audio>
+            </div>
+            <h4>Shape Of you</h4>
+            <p>Song By Ed Sheeran</p>
+          </div>
+
+          <div class="item">
+            <img src="battameez.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause8()"></span>
+              <audio id="music8" src="Badtameez Dil - Yeh Jawaani Hai Deewani 128 Kbps.mp3"></audio>
+            </div>
+            <h4>Badtameez Dil</h4>
+            <p>Song by Benny Dayal and Shefali Alvares</p>
+          </div>
+
+          <div class="item">
+            <img src="thunder.webp" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause9()"></span>
+              <audio id="music9" src="Imagine_Dragons_-_Thunder.mp3"></audio>
+            </div>
+            <h4>Thunder</h4>
+            <p>Song by Imagine Dragons</p>
+          </div>
+
+          <div class="item">
+            <img src="128Senorita - Zindagi Na Milegi Dobara 128 Kbps.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause10()"></span>
+              <audio id="music10" src="Senorita - Zindagi Na Milegi Dobara 128 Kbps.mp3"></audio>
+            </div>
+            <h4>Senorita</h4>
+            <p>Song by Shankar–Ehsaan–Loy</p>
+          </div>
+
+          <div class="item">
+            <img src="we dont talk.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause11()"></span>
+              <audio id="music11" src="We-Don't-Talk-Anymore(PaglaSongs).mp3"></audio>
+            </div>
+            <h4>We dont talk anymore</h4>
+            <p>Song by Charlie Puth</p>
+          </div>
+          
+          <div class="item">
+            <img src="para.jpg" width="10px" height="160px"/>
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause12()"></span>
+              <audio id="music12" src="Coldplay_-_Paradise_(Naijay.com).mp3"></audio>
+            </div>
+            <h4>Paradise</h4>
+            <p>Song By Coldplay</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tuneflix-music" id="romantic">
+        <div class="list">
+          <div class="item">
+            <img src="its.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause13()"></span>
+              <audio id="music13" src="Its the Time to Disco - Kal Ho Naa Ho 128 Kbps.mp3"></audio>
+            </div>
+            <h4>Its the Time to Disco</h4>
+            <p>Song by Vasubdhara Das, KK , Shaan and Loy Mendonsa  </p>
+          </div>
+
+          <div class="item">
+            <img src="wildestdreams.jpg" width="10px" height="160px"/>
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause14()"></span>
+              <audio id="music14" src="Taylor_Swift_-_Wildest_Dreams_Taylor_s_Version__(thinknews.com.ng).mp3"></audio>
+            </div>
+            <h4>Wildest Dreams</h4>
+            <p>Song By Taylor Swift</p>
+          </div>
+
+          <div class="item">
+            <img src="rock.jpg" width="10px" height="160px"/>
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause15()"></span>
+              <audio id="music15" src="Rock N Roll Soniye - Kabhi Alvida Naa Kehna 128 Kbps.mp3"></audio>
+            </div>
+            <h4>Rock N Roll Soniye</h4>
+            <p>Beautifully dark, dramatic tracks.</p>
+          </div>
+
+          <div class="item">
+            <img src="circles.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause16()"></span>
+              <audio id="music16" src="Post_Malone_-_Circles.mp3"></audio>
+            </div>
+            <h4>Circles</h4>
+            <p>Song By Post Malone</p>
+          </div>
+
+          <div class="item">
+            <img src="sweet.jpg" width="10px" height="160px"/>
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause17()"></span>
+              <audio id="music17" src="Guns_N_Roses_-_Sweet_Child_O_Mine.mp3"></audio>
+            </div>
+            <h4>Sweet child O Mine</h4>
+            <p>Song by Guns N' Roses</p>
+          </div>
+
+          <div class="item">
+            <img src="balam.jpg" />
+            <div class="play">
+              <span class="fa fa-play" onclick="playPause18()"></span>
+              <audio id="music18" src="bollywood_YJHD 2013 - Balam Pichkari.mp3"></audio>
+            </div>
+            <h4>Balam Pichkari</h4>
+            <p>Song By SHALMALI, Shalmali Kholgade, and Vishal Dadlani</p>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/23cecef777.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  </html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback Form</title>
+<style>
+
+	.topbar {
+	
+	width: 97%;
+	position: relative;
+	background-color: #1a9ad9;
+	padding: 0px 25px;
+	text-align: center;
+	}
+
+	.topbar .navbar {
+	display: flex;
+	align-items: center;
+	}
+	
+	.topnav-centered a {
+	float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	}
+
+	.topbar .navbar ul li {
+	display: inline-block;
+	margin: 0px 8px;
+	width: 70px;
+	align-items: right;
+	}
+	.topbar .navbar ul li a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 1px;
+	}
+	.topbar .navbar ul li a:hover,
+	.topbar .navbar ul li a:active,
+	.topbar .navbar ul li a:focus {
+	color: #f3eded;
+	font-size: 15px;
+	}
+	.topbar .navbar ul li.divider {
+	color: #ffffff;
+	font-size: 26px;
+	margin: 0px 20px;
+	width: auto;
+	}
+	
+	.top-right {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+
+		body {
+			background-color: #f5f5f5;
+			font-family: "Segoe UI", sans-serif;
+			color: #333;
+      background-image: url(https://wallpapercrafter.com/desktop1/507193-geometry-poly-vector-dots-abstract-digital-art.jpg);
+		}
+		h1 {
+			font-size: 32px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 50px;
+            color: rgb(254, 255, 255);
+		}
+		form {
+			background-color: #69b9e4;
+			align-items: center;
+			justify-content: center;
+			padding: 40px;
+			max-width: 569px;
+			margin: 0 auto;
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+			font-size: 18px;
+			line-height: 1.6;
+		}
+		input[type="text"], textarea {
+			width: 100%;
+			padding: 15px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 20px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			font-size: 18px;
+			line-height: 1.6;
+			resize: vertical;
+			align-items: center;
+			justify-content: center;
+		}
+		input[type="submit"] {
+			background-color: #ff4081;
+			color: #fff;
+			border: none;
+			padding: 15px 25px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			line-height: 1.6;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			transition: background-color 0.3s ease;
+		}
+		input[type="submit"]:hover {
+			background-color: #d81b60;
+			transition: background-color 0.3s ease;
+		}
+		label {
+			align-items: center;
+			justify-content: center;
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 1.6;
+		}
+	</style>
+  <script>
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  validateForm();
+});
+
+function validateForm() {
+  const email = document.querySelector('#email').value.trim();
+  var Phone_number=document.getElementById("Phone_number").value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return false;
+  }
+  if (Phone_number.length !=10) {
+    alert("Please enter a valid 10-digit phone number.");
+    return false;
+  }
+}
+
+  </script>
+</head>
+<body>
+
+	<div class="topbar">
+        
+
+        <div class="navbar" id="tuneflix">
+          <ul>
+            <li>
+              </li>
+			</ul>
+          <ul class="top-right">
+            <li>
+              <a href = "Mainpage_Siddhi.html" target="_self">Home</a>
+            </li>
+            <li class="divider">|</li>
+            <li>
+              <a href="mood_siddhi.html">Mood</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+	<h1>Feedback Form</h1>
+	<form action="thankyou_siddhi.html"  name="myForm" onsubmit="return validateForm()">
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" required>
+
+    <label for="Phone number">Phone number</label>
+		<input type="text" id="Phone_number" name="Phone number" required>
+
+		<label for="feedback">Feedback</label>
+		<textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+		<input type="submit" value="Submit" >
+	</form>
+</body>
+</html>

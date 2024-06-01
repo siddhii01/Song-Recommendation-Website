@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Page</title>
+  <style>
+    body {
+      font-family: 'Monteserrat', sans-serif;
+      background-color: #f2f2f2;
+      background-image: url(https://wallpapercrafter.com/desktop1/507193-geometry-poly-vector-dots-abstract-digital-art.jpg);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      align-items: top left;
+      
+    }
+
+    .topbar {
+    width: 100%;
+    position: relative;
+    background-color: lightblue;
+    padding: 14px 30px;
+    text-align: center;
+    }
+
+    .topbar .navbar {
+    display: flex;
+    align-items: center;
+    }
+    
+    .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    .topbar .navbar ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+    align-items: right;
+    }
+    .topbar .navbar ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    }
+    .topbar .navbar ul li a:hover,
+    .topbar .navbar ul li a:active,
+    .topbar .navbar ul li a:focus {
+    color: #f3eded;
+    font-size: 15px;
+    }
+    .topbar .navbar ul li.divider {
+    color: #ffffff;
+    font-size: 26px;
+    margin: 0px 20px;
+    width: auto;
+    }
+  
+    .top-right {
+           position: absolute;
+           top: 0;
+           right: 0;
+       }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .imageicon{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: 20px;
+    }
+    .profile-info {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .profile-bio {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .profile-details {
+      display: flex;
+      justify-content:  left;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+    .profile-details span {
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+  <script>
+    import React from 'react';
+import Profile from './Profile';
+
+const App = () => {
+  return (
+    <div>
+      <Profile />
+    </div>
+  );
+};
+
+export default App;
+
+  </script>
+</head>
+<body>
+    <div class="topbar">
+        
+
+        <div class="navbar" id="tuneflix">
+          <ul class="list-container">
+            <li>
+              <a href="Mainpage_Siddhi.html" target="_self">Home</a>
+            </li>
+            <li class="divider">|</li>
+            <li>
+              <a href = "mood_siddhi.html" target="_self">Mood</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  <div class="container">
+    <div class="profile-header">
+      <img src="profile_siddhi.png" alt="Avatar" class="avatar">
+      <div class="profile-info">
+        <h1>Siddhi Anand</h1>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="profile-details">
+      <div style="display: inline-block;">
+       <p> <img src="mail.png" width="50" height="50"/> E-mail: <siddhi class="anand"></siddhi>siddhi.anand@somaiya.edu</p>
+      </div>
+    </div>
+
+    <div class="profile-details">
+      <div style="display: inline-block;">
+       <p> <img src="gender.png" width="50" height="50"/> Gender: Female</p>
+      </div>
+    </div>
+
+    <div class="profile-details">
+      <div style="display: inline-block;">
+       <p> <img src="location.png" width="50" height="50"/> Location: Mumbai, India</p>
+      </div>
+    </div>
+
+    
+
+  </div>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        let data=[
+            {
+                name:"matt shin",
+                designation:"powerlifter",
+                image:"images/trainer-1.jpg"
+            },
+            {
+                name:"georgina shell",
+                designation:"fitness influencer",
+                image:"images/trainer-2.jpg"
+            },
+            {
+                name:"alex nolan",
+                designation:"fitness influencer",
+                image:"images/trainer-3.jpg"
+            },
+            {
+                name:"sarah deo",
+                designation:"powerlifter",
+                image:"images/trainer-4.jpg"
+            },
+        ]
+        console.log(data)
+        function App(){
+            
+
+
+            return(
+            <React.Fragment>
+                {data.map(item=>(
+                    <div class="box">
+                <img src={item.image} alt=""/>
+                <div class="content">
+                    <span>{item.name}</span>
+                    <h3>{item.designation}</h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+                ))}
+                </React.Fragment>
+
+            )
+        }
+        ReactDOM.createRoot(document.getElementById('trainer-box')).render(
+            <App />
+        );
+        
+    </script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
